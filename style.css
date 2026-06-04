@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+:root {
+    --cor01: #FF0000;
+    --cor02: #4B2300;
+    --cor03: #EEFF00;
+    --cor04: #1024FF;
+    --cor05: #FF7410;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+/*Configuração da barra de navegação*/
+
+header {
+    width: 100vw;
+    height: 1000px;
+    background-image: url(imgs/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+
+}
+
+nav a {
+    font-size: 18px;
+    margin: 30px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    transition: .5s;
+}
+
+nav a:hover {
+    color: var(--cor05);
+}
+
+.logo img {
+    border-radius: 100%;
+}
+
+.button {
+    transition: 0.5s;
+}
+
+.button a {
+    position: relative;
+    background-color: var(--cor05);
+    color: white;
+    padding: 15px;
+    border-radius: 50px;
+}
+
+.button a:hover {
+    top: -2px;
+    left: -3px;
+    color: white;
+}
