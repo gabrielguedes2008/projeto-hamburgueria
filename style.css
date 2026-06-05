@@ -43,7 +43,7 @@ nav a {
     transition: .5s;
 }
 
-nav a:hover {
+.nav-itens a:hover {
     color: var(--cor05);
 }
 
@@ -52,19 +52,117 @@ nav a:hover {
 }
 
 .button {
+    position: relative;
     transition: 0.5s;
 }
 
-.button a {
-    position: relative;
+.button  {
     background-color: var(--cor05);
     color: white;
     padding: 15px;
     border-radius: 50px;
+    box-sizing: border-box;
+    box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.63);
 }
 
-.button a:hover {
-    top: -2px;
-    left: -3px;
+.button:hover {
+    transform: translate(-3px, -3px);
     color: white;
+    box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.61);
+}
+
+.sectionB {
+    background-image: url(imgs/background-desk.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    color: white;
+}
+
+.sectionB article {
+    width: 500px; 
+    margin-right: -300px;
+}
+
+.sectionB h1 {
+    text-align: left;
+    margin-left: 20px;
+    font-size: 50px;
+    margin-top: -20px;
+}
+
+#texto-cima {
+    color: var(--cor03);
+    margin-left: 45px;
+    font-family: "Poppins", sans-serif;
+}
+
+#texto-baixo {
+    color: white;
+    font-family: "Rammetto One", sans-serif;
+    
+}
+
+.sectionB p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.sectionB img {
+    border-radius: 20px;
+}
+
+.sectionC {
+    height: 480px;
+    padding: 15px;
+    padding-top: 25px;
+    text-align: center;
+    position: relative;
+}
+
+.sectionC h1 {
+    font-family: "Sail", system-ui;
+}
+
+.sectionC h2 {
+    font-family: "Rammetto One", sans-serif;
+}
+
+.titles {
+    margin-bottom: 15px;
+}
+
+.images-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 55px;
+
+}
+
+.images-row h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: bolder;
+}
+
+#buttonB {
+    background-color: var(--cor01);
+    padding: 15px;
+    padding-left: 52px;
+    padding-right: 52px;
+    border-radius: 50px;
+    text-align: center;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    box-shadow: 3px 4px 3px rgba(0, 0, 0, 0.274);
+}
+
+#buttonB:hover {
+    top: 5px;
 }
